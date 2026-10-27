@@ -2,6 +2,10 @@
 
 実施日: 2026-10-27 (JST)
 
+- ローカル自動テスト: JavaScript 17/17、Python 8/8成功（計25件）。GitHub ActionsのWindows runnerでも両テストとPagesデプロイ成功。
+- 公開URL: https://kkodamalab.github.io/hand-gesture-ppt-controller/ （HTTP 200確認）。`app.js`もHTTP 200。
+- 公開ページを実ブラウザで開き、DEMO MODE、7設定項目、保持時間500→600 ms変更、再読み込み後の保持、RESET DEFAULTSで500 ms復帰を確認。
+
 - JavaScript: 保持時間境界、再発火防止、左右スワイプ、ノイズ拒否、追跡途切れ、ミラー座標、手形の左右反転・スケール変化を自動テスト。
 - Python: localhost HTTPで4 Action受信からWindows INPUT構築・SendInput呼び出し境界までを検証。任意Action・不正token・不正Origin・重複要求・過密要求を拒否。失敗応答とDRY RUNも検証。
 - Windows x64 INPUT構造体サイズ40 byteを確認。

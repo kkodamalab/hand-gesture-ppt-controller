@@ -1,5 +1,8 @@
 # Hand Gesture PowerPoint Controller
 
+- [GitHub Pages デモ](https://kkodamalab.github.io/hand-gesture-ppt-controller/)
+- [GitHub リポジトリ](https://github.com/kkodamalab/hand-gesture-ppt-controller)
+
 Webカメラ → MediaPipe Hand Landmarker → Gesture Detector → Trigger Engine → localhost HTTP → Windows SendInput → PowerPoint。
 
 WebとWindows Bridgeを分離した、4操作だけの最小デモです。カメラ映像はブラウザ内で処理し、Bridgeに送るのはActionと重複防止IDだけです。
